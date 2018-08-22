@@ -1,0 +1,44 @@
+
+ 
+package lista.poo;
+
+
+public class Vetor11 {
+
+    //EXERCÍVIO 11 (VETORES) Lucas Yanaga
+
+ 
+  public static void main(String[] args) {
+   
+ 
+    int n = 500; // tamanho do vetor
+    int v[] = new int[n]; // declaração do vetor "v"
+    int i; // índice ou posição
+ 
+// Entrada de Dados
+    for (i=0; i<n; i++) {
+      v[i] = (int)(float)Math.round(Math.random() * 10); 
+      
+    }
+ 
+    int maior = v[0]; //maior valor do vetor
+    for (i=0; i<n; i++) {
+ 
+      if (v[i] > maior)
+         maior = v[i]; //Atribuindo o maior valor a vairável
+    }
+ 
+// Saída (resultados)
+    System.out.printf("\n");
+    for (i=0; i<n; i++) {
+           System.out.println(v[i] / maior);
+           
+               }
+ 
+  }
+ 
+}
+
+    
+    
+
