@@ -1,6 +1,6 @@
 /*
  * Disciplina: Pogramação Orientada a Objetos
- * Aluno: Luan Magalhães
+ * Aluno: João Pedro Lima
  */
 package listaVetor;
 
