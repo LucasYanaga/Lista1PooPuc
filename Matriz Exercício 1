@@ -1,0 +1,68 @@
+
+package lista.poo;
+
+import java.util.Scanner;
+//EXERCÍCIO 1 MATRIZ Lucas Yanaga
+
+public class matrizes {
+    
+    
+    
+    public static void main(String[] args) {
+        //Matrizes
+        int n[][] = {{3,1,3}, {6,5,5}};
+        int x[][]= {{100,50},{50,100},{50,50}};
+        
+       
+        
+        Scanner input = new Scanner(System.in);
+        //Entrada de dado
+        System.out.println("Digite o mês desejado:\n"
+                + "[ 1 ] Maio\n"
+                + "[ 2 ] Junho\n");
+        int mes = input.nextInt();
+             
+            
+        
+        
+        
+    switch(mes){
+        //Cálculo mes maio   
+        case 1:
+    
+            int botaoA = 9 * 100;
+            int botaoB = 6 * 50;
+            int botaoC = 8 * 50;
+            int botaoTotal1 = botaoA + botaoB + botaoC;
+            
+            System.out.printf("Foram utilizado %d botoes no mes de maio", botaoTotal1);
+            
+            break;
+        
+        //Cálculo mes junho
+        case 2:
+            
+            int botaoD = 9 * 50;
+            int botaoE = 6 * 100;
+            int botaoF = 8 * 50;
+            int botaoTotal2 = botaoD + botaoE + botaoF;
+            
+            System.out.printf("Foram utilizado %d botoes no mes de junho", botaoTotal2);
+            
+            break;
+        
+        default:
+            System.out.println("Digite um número válido!");
+        
+            break;
+        }
+            
+        
+         
+        }
+        
+                
+    }
+
+         
+
