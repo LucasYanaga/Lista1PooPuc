@@ -1,0 +1,105 @@
+
+package lista.poo;
+
+import java.util.Scanner;
+
+//EXERCÍCIO 2 MATRIZ Lucas Yanaga
+public class matrizes2 {
+    
+    public static void main(String[] args) {
+        
+        Scanner input = new Scanner(System.in);
+        
+        int M[][] = new int[4][6];
+        int N[][] = new int[4][6];
+        int C[][] = new int[4][6];
+        
+        // Matriz M
+        for(int i = 0; i < 4 ; i++){  
+            for(int j = 0; j < 6 ; j++){  
+                    M[i][j] = (int)(Math.random()*10);
+            }
+        }
+        //Matriz N
+        for(int i = 0; i < 4 ; i++){  
+            for(int j = 0; j < 6 ; j++){  
+                    N[i][j] = (int)(Math.random()*10);
+            }
+        }
+        //Mostrar Matriz M
+        System.out.println("Matriz M:");
+        for(int i = 0; i < 4 ; i++){
+            for(int j = 0; j < 6 ; j++){
+                System.out.printf ("%2d\t", M[i][j]);
+            
+                }
+             System.out.printf("\n ");
+            }
+        //Mostrar Matriz N
+        System.out.println("Martiz N:");
+        for(int i = 0; i < 4 ; i++){
+            for(int j = 0; j < 6 ; j++){
+                System.out.printf ("%2d\t", N[i][j]);
+                }
+            System.out.printf("\n ");
+            }
+
+
+        System.out.println("Escolha uma ação:\n"
+                          + "[ 1 ] Produto de M por N\n"
+                          + "[ 2 ] Soma de M com N\n"
+                          + "[ 3 ] Diferença de M por N\n");
+        int acao = input.nextInt();
+        
+
+
+        // Cálculo Produto
+        if (acao == 1){ 
+            System.out.println("Matriz M * N:");
+            for(int i = 0; i < 4; i++){
+                for(int j = 0; j <6; j ++){
+                C[i][j] = M[i][j] * N[i][j];
+                System.out.printf("%d\t", C[i][j]);
+                
+                }
+                System.out.printf("\n");
+            }    
+        
+        
+        }
+        // Cálculo Soma
+        if (acao == 2){ 
+            System.out.println("Matriz M + N:");
+            for(int i = 0; i < 4; i++){
+                for(int j = 0; j <6; j ++){
+                C[i][j] = M[i][j] + N[i][j];
+                System.out.printf("%d\t", C[i][j]);
+                
+                }
+                System.out.printf("\n");
+            }
+        
+        
+        }
+        //Cálculo Diferença
+        if (acao == 3){ 
+            System.out.println("Matriz M - N:");
+            for(int i = 0; i < 4; i++){
+                for(int j = 0; j <6; j ++){
+                C[i][j] = M[i][j] - N[i][j];
+                System.out.printf("%d\t", C[i][j]);
+                
+                }
+                System.out.printf("\n");
+            }
+        
+        
+        }
+        
+    
+    
+    }
+}
+    
+    
+
